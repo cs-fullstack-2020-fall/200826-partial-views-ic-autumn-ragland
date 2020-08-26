@@ -24,10 +24,7 @@ Create a Movie Listing that allows users to view all movies, view movies with po
 
 #### View Positve Movies
 - Action : Pass public list of movies to associated view
-- View : Use partial to render details of each resident that have a rating 5 or over (handle the condition in the view)
-- * If no movies have a rating 5 or over display an h1 with the text `All the movie sucked`
-
+- View : Use partial to render details of each movie that have a rating 5 or over (handle the condition in the view)
 #### View Negative Movies
 - Action : Pass public list of movies to associated view
-- View : Use partial to render details of each resident that have a rating under 5 (handle the condition in the view)
-- * If no movies have a rating under 5 display an h1 with the text `All the movie were great!!!`
+- View : Use partial to render details of each movie that have a rating under 5 (handle the condition in the view)

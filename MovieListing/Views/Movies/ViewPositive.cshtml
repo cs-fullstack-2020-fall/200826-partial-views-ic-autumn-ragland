@@ -1,0 +1,11 @@
+@model MovieListing.ViewModels.MovieListViewModel
+<h1>View Positive Movies</h1>
+
+@foreach (Movie movie in @Model.movieList)
+{
+    if(@movie.rating >= 3)
+    {
+        <partial name = "_MovieDetails" model = "movie"/>  
+    }
+}
+

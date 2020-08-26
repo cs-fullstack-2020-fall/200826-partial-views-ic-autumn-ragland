@@ -1,4 +1,24 @@
-<h1>Welcome to the Movie Listing Landing Page</h1>
- <a asp-area="" asp-controller="Movies" asp-action="ViewAll">View All Movies</a>
- <a asp-area="" asp-controller="Movies" asp-action="ViewPositive">View Positive Movies</a>
- <a asp-area="" asp-controller="Movies" asp-action="ViewNegative">View Negative Movies</a>
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the Movie Listing Landing Page</h1>
+  <p class="lead">Create a Movie Listing that allows users to view all movies, view movies with positive reviews and view movies with negative reviews</p>
+  <hr class="my-4">
+  <p class="lead">
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="Movies" asp-action="ViewAll">View All Movies</a>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="Movies" asp-action="ViewNegative">View Negative Movies</a>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="Movies" asp-action="ViewPositive">View Positive Movies</a>
+    </button>
+  </p>
+</div>
+
+

@@ -1,11 +1,13 @@
 @model MovieListing.ViewModels.MovieListViewModel
 <h1>View Positive Movies</h1>
 
-@foreach (Movie movie in @Model.movieList)
-{
-    if(@movie.rating >= 3)
+<div class="card-group">
+    @foreach (Movie movie in @Model.movieList)
     {
-        <partial name = "_MovieDetails" model = "movie"/>  
+        if(@movie.rating >= 5)
+        {
+            <partial name = "_MovieDetails" model = "movie"/>  
+        }
     }
-}
+</div>
 

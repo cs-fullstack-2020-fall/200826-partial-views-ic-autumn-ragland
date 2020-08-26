@@ -1,3 +1,10 @@
-<h2>Movie Name : @Model.title</h2>
-<h3>Movie Description : @Model.description</h3>
-<h3>Movie Rating : @Model.rating</h3>
+<div class="card text-white bg-dark mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">@Model.title</h5>
+    <p class="card-text">@Model.description</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item text-dark">Rating : @Model.rating</li>
+  </ul>
+</div>
+<br>

@@ -1,6 +1,8 @@
 @model MovieListing.ViewModels.MovieListViewModel
 <h1>View All Movies</h1>
-@foreach (Movie movie in @Model.movieList)
-{
-    <partial name = "_MovieDetails" model = "movie"/>
-}
+<div class="card-columns">
+    @foreach (Movie movie in @Model.movieList)
+    {
+        <partial name = "_MovieDetails" model = "movie"/>
+    }
+</div>
